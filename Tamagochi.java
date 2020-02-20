@@ -6,7 +6,7 @@ public class Tamagochi{
 		
 		
 		//TEST GITTT
-		
+		//afasds
 		
 		System.out.println("Hi! Welcome to Tamagochi");
 		System.out.println("What would you like to name it?");
