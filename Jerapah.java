@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Jerapah{
-	
+	//testgit
 	private String name;
 	private double energy;
 	private boolean cleanliness;
@@ -112,9 +112,14 @@ public class Jerapah{
 		return cleanliness;
 	}
 	
+// CLEAN ROOM METHOD
+
+
+	
 	
 //	SLEEP METHOD	
 	public double sleep(double tidur){
+
 		energy = energy + tidur; 
 		hunger = hunger - tidur;
 		cleanliness = false;
@@ -128,15 +133,14 @@ public class Jerapah{
 //	MEDICINE METHOD
 	public double medicine(double obat){ 
 		happiness = happiness/2;
-
+		int counter = 0;
 			if(obat == 5 || obat ==10 || obat ==15 || obat == 20){
 				health =+ obat;
 				System.out.println("------------------------");
 				System.out.println("You gave " + getName() + " his medicine");
 				System.out.println("------------------------");
-				
-			}else{
-				System.out.println("Pleas Enter doses in multiples of 5 to a max of 20");
+			else{
+				System.out.println("Pleas Enter doses in multiples of 5 to a max of 20 you can only do a dose of 20 3 times");
 				}
 				
 			
@@ -183,6 +187,14 @@ public class Jerapah{
 	public void condition(){
 		if(getHealth() <= 0){
 				System.out.println("You are Sick, drink some medicine!");
+		}if(getHealth() <= -50){
+				System.out.println("You got sick and died");
+				gameover = true;
+		}if(getHunger() <= 0){
+			System.out.println("You are Hungry, Eat Some food!!!!");
+		}if(getHunger() <= -20){
+				System.out.println("You died of starvation");
+			gameover = true;
 		}
 	}
 }
