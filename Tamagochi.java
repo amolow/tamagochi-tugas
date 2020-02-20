@@ -5,7 +5,7 @@ public class Tamagochi{
 		Jerapah j = new Jerapah();
 		
 		
-		
+		//TEST GITTT
 		
 		
 		System.out.println("Hi! Welcome to Tamagochi");
